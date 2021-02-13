@@ -1,0 +1,254 @@
+/*
+=========================================
+CSS INI DIBUAT MURNI OLEH RESTU D. CAHYO
+BUTUH PEMBUATAN APLIKASI ?, UNTUK TUGAS AKHIR ATAU PROYEK ?
+BISA HUBUNGI
+Instagram / Twitter : resitdc
+Email : dwi.restu3@gmail.com
+=========================================
+*/
+:root {
+  --black: #000;
+  --black-1: #222;
+  --black-2: #737373;
+  --gray-1: #c3c3c3;
+  --gray-2: #eee;
+  --gray-3: #f7f8f9;
+  --white: #fff;
+  --gray-1: #fff;
+  --blue-1: #2c3145;
+  --blue-2: #2c3145;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--blue-1);
+}
+a {
+  text-decoration: none;
+}
+input:-webkit-autofill {
+  background-color: none !important;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 0 !important;
+}
+body::-webkit-scrollbar-track {
+  background: #24293d;
+  border-radius: 0 !important;
+  box-shadow: unset !important;
+}
+body::-webkit-scrollbar-thumb {
+  background: #34bdc7;
+  border-radius: 0 !important;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.resit-container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .resit-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .resit-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .resit-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .resit-container {
+    max-width: 1250px;
+  }
+}
+
+.resit-home {
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100%;
+  margin-bottom: 100px;
+}
+
+#resit-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--blue-1);
+  z-index: 110;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#resit-navbar .resit-container {
+  height: 100%;
+}
+#resit-navbar .resit-navbar-row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#resit-navbar .resit-brand-image {
+  width: 100%;
+}
+#resit-navbar .resit-navbar-brand {
+  width: 190px;
+}
+#resit-navbar .resit-navbar-menu {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+#resit-navbar .resit-navbar-search-input {
+  outline: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 3px 0 3px 15px;
+  text-align: right;
+  width: 100%;
+}
+#resit-navbar .resit-navbar-search {
+  width: 330px;
+  position: relative;
+}
+#resit-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+#resit-footer .resit-credits {
+  color: #34bdc7;
+}
+
+#resit-fixed-menu::before {
+  content: "\00ab";
+  color: #34bdc7;
+  font-size: 14rem;
+  line-height: 350px;
+  padding-left: 35px;
+}
+#resit-fixed-menu {
+  background: rgba(35, 40, 60, 0.9);
+  border-radius: 100%;
+  position: fixed;
+  top: 0;
+  right: -204px;
+  margin-top: calc(22% - 140px);
+  width: 400px;
+  height: 400px;
+  transform: scale(0.2);
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+}
+#resit-fixed-menu:hover::before {
+  display: none;
+}
+#resit-fixed-menu:hover {
+  right: -250px;
+  transform: scale(1);
+}
+#resit-fixed-menu .resit-list-menu {
+  display: none;
+  list-style-type: none;
+  padding-left: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  transition: 0.3s ease-in-out;
+}
+#resit-fixed-menu:hover .resit-list-menu {
+  transition: 0.3s ease-in-out;
+  padding-right: 270px;
+  display: block;
+}
+.resit-list-menu li,
+.resit-list-menu li a {
+  cursor: pointer;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #1a939c;
+  font-weight: normal;
+  text-align: right;
+  text-decoration: none;
+}
+.resit-list-menu li:hover,
+.resit-list-menu li:hover a {
+  color: #34bdc7;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.resit-text-center {
+  text-align: center;
+}
+.resit-white {
+  color: #fff;
+}
+.resit-mb-1 {
+  margin-bottom: 0.5rem;
+}
+.resit-mb-2 {
+  margin-bottom: 1rem;
+}
+.resit-mb-3 {
+  margin-bottom: 1.5rem;
+}
+.resit-mb-4 {
+  margin-bottom: 2rem;
+}
+.resit-mb-5 {
+  margin-bottom: 2.5rem;
+}
+.resit-mb-6 {
+  margin-bottom: 3rem;
+}
+.resit-mt-1 {
+  margin-top: 0.5rem;
+}
+.resit-mt-2 {
+  margin-top: 1rem;
+}
+.resit-mt-3 {
+  margin-top: 1.5rem;
+}
+.resit-mt-4 {
+  margin-top: 2rem;
+}
+.resit-mt-5 {
+  margin-top: 2.5rem;
+}
+.resit-mt-6 {
+  margin-top: 3rem;
+}
