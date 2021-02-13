@@ -4,6 +4,10 @@
 
 ## ⚠️ IKUTI CARA DIBAWAH UNTUK INSTALASI CODEIGNITER
 
+### Cara import database
+
+Oh iya disini saya menyimpan juga mentahan databasenya, ada di dalam folder **database** , nanti teman teman bisa import ke localnya masing masing, akan panjang jika dijelaskan tutorialnya disini, teman teman bisa coba search di google **cara import database mysql**
+
 ### Setting database di codeigniter
 
 1. buka file application/config/database.php
@@ -12,10 +16,10 @@
 ```PHP
   $db['default'] = array(
     'dsn'	=> '',
-    'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'db_unla_movie',
+    'hostname' => *'localhost'*,
+    'username' => *'root'*,
+    'password' => *''*,
+    'database' => *'db_unla_movie'*,
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
@@ -33,7 +37,7 @@
   );
 ```
 
-3. ubah kode bagian hostname, username, password, database sesuaikan dengan configurasi kalian
+3. ubah kode bagian **hostname**, **username**, **password** dan **database** lalu sesuaikan dengan configurasi kalian
 
 ## Screenshot Aplikasi
 
