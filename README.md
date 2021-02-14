@@ -16,10 +16,10 @@ Oh iya disini saya menyimpan juga mentahan databasenya, ada di dalam folder **da
 ```PHP
   $db['default'] = array(
     'dsn'	=> '',
-    'hostname' => *'localhost'*,
-    'username' => *'root'*,
-    'password' => *''*,
-    'database' => *'db_unla_movie'*,
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'db_unla_movie',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
